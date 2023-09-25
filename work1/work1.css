@@ -8,53 +8,63 @@ body {
     background-color: #DCF3FF;
 }
 
-#nav {
+.w {
     width: 1430px;
-    height: 50px;
-    line-height: 50px;
     margin: 0 auto;
+}
+
+/* 导航栏 */
+
+#nav {
+    height: 50px;
+
+    line-height: 50px;
     font-size: 0;
 }
 
-#nav a {
+#nav ul li {
+    float: left;
+}
+
+#nav ul .a-works {
+    margin: 0 490px;
+}
+
+#nav ul li a {
     display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
     font-size: 25px;
     color: black;
     text-decoration: none;
     text-align: center;
-    height: 50px;
-    width: 150px;
-    border-radius: 25px;
     transition: all .3s;
-}
-
-#nav .a-works {
-    margin: 0 490px;
 }
 
 #nav a:hover {
     background-color: #395DA4;
     text-decoration: underline;
-
 }
 
+/* 简介 */
+
 #brief {
-    width: 1430px;
     height: 312px;
     border-radius: 20px;
     border: 2px solid #000;
-    margin: 0 auto;
 }
 
+/* 简介-图片 */
+
 #brief #all {
-    display: inline-block;
-    height: 230px;
+    float: left;
     width: 230px;
+    height: 230px;
+    margin: 38px 50px 38px 25px;
     background: url(img/all.jpg);
     background-size: 236px 236px;
-    margin: 38px 50px 38px 25px;
     border-radius: 50%;
-    float: left;
     transition: all .2s linear;
 }
 
@@ -62,31 +72,33 @@ body {
     transform: scale(1.2);
 }
 
+/* 简介-文本 */
+
 #brief p {
-    display: inline-block;
+    float: left;
     width: 1100px;
     height: 68px;
     margin-top: 122px;
-    float: left;
     font-size: 25px;
 }
 
+/* 人物介绍 */
+
 #character {
-    width: 1430px;
     height: 524px;
-    margin: 48px auto 0;
+    margin-top: 48px;
 }
 
 #character>div {
-    display: inline-block;
-    width: 310px;
-    height: 529px;
     float: left;
+    width: 310px;
 }
 
 #character #pai {
     margin: 0px 250px;
 }
+
+/* 人物介绍-文本 */
 
 #character>div .character-text {
     height: 188px;
@@ -101,12 +113,12 @@ body {
     transform: scale(1.2);
 }
 
-
 #character>div .character-text p {
     margin: 20px 15px 0;
     text-align: left;
 }
 
+/* 人物介绍-图片 */
 
 #character>div .character-img {
     height: 312px;
@@ -122,15 +134,6 @@ body {
 
 #character #hai>div {
     background-color: rgba(248, 207, 55);
-
-}
-
-#character #pai>div {
-    background-color: rgba(208, 128, 121);
-}
-
-#character #zhang>div {
-    background-color: rgba(56, 95, 152);
 }
 
 #character #hai .character-img {
@@ -138,9 +141,17 @@ body {
     background-size: contain;
 }
 
+#character #pai>div {
+    background-color: rgba(208, 128, 121);
+}
+
 #character #pai .character-img {
     background-image: url(img/paidaxing.jpg);
     background-size: contain;
+}
+
+#character #zhang>div {
+    background-color: rgba(56, 95, 152);
 }
 
 #character #zhang .character-img {
@@ -148,43 +159,44 @@ body {
     background-size: contain;
 }
 
+/* 系列作品 */
+
 #works {
-    width: 1430px;
     height: 158px;
-    margin: 52px auto 0;
+    margin-top: 52px;
     text-align: center;
     font-size: 20px;
 }
 
+/* 系列作品-表头 */
+
 #works .title {
-    width: 1430px;
     height: 28px;
     font-weight: 700;
 }
 
 #works .title .name {
-    display: inline-block;
+    float: left;
     width: 808px;
     height: 28px;
-    float: left;
 }
 
 #works .title .date {
-    display: inline-block;
+    float: left;
     width: 522px;
     height: 28px;
-    float: left;
 }
 
-#works .title .mun {
-    display: inline-block;
+#works .title .num {
+    float: left;
     width: 100px;
     height: 28px;
-    float: left;
+
 }
 
+/* 系列作品-表格主体 */
+
 #works .table {
-    width: 1430px;
     height: 130px;
 }
 
@@ -192,46 +204,43 @@ body {
     height: 26px;
 }
 
-
 #works .table .name {
-    display: inline-block;
+    float: left;
     width: 808px;
     height: 130px;
-    float: left;
     border-radius: 7px 0 0 7px;
     background-color: rgba(153, 204, 255);
 }
 
 #works .table .date {
-    display: inline-block;
+    float: left;
     width: 522px;
     height: 130px;
-    float: left;
     background-color: rgba(135, 206, 235);
 }
 
-#works .table .mun {
-    display: inline-block;
+#works .table .num {
+    float: left;
     width: 100px;
     height: 130px;
-    float: left;
     border-radius: 0 7px 7px 0;
     background-color: rgba(102, 153, 204);
 }
 
+/* 我们相关 */
+
 #feedback {
-    width: 1430px;
     height: 330px;
-    margin: 63px auto 0;
+    margin-top: 63px;
 }
 
 #feedback form textarea {
     width: 1430px;
     height: 244px;
-    background-color: #DCF3FF;
     border-width: 2px;
     border-radius: 8px;
     border-color: #87CEED;
+    background-color: #DCF3FF;
     font-size: 20px;
 }
 
@@ -239,10 +248,10 @@ body {
     width: 168px;
     height: 64px;
     margin: 22px 0 0 1262px;
-    background-color: #6495ED;
     border-radius: 7px;
     border-color: #6495ED;
     border-style: solid;
+    background-color: #6495ED;
     font-size: 18px;
     color: white;
     transition: background-color .3s;
@@ -258,7 +267,6 @@ body {
 }
 
 footer p {
-    width: 1430px;
     height: 20px;
     margin: 1000px auto 50px;
     text-align: right;
